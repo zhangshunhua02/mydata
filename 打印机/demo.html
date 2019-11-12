@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>打印机</title>
+</head>
+<body>
+	<div id="box" style="width: 600px;height: 60px;text-align: left;line-height: 60px;font-size: 32px;font-weight: bolder;border: 7px solid #ccc;margin: 50px auto;text-indent: 50px"></div>
+	<script>
+		var str = "如人饮水，冷暖自知！！！";
+		var start_pos = 0;
+		setInterval(function(){
+			box.innerHTML = str.substr(0,++start_pos > str.length ? (start_pos = 0) : start_pos);
+		},1000);
+	</script>
+</body>
+</html>

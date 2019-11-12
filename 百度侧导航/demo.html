@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百度侧导航</title>
+</head>
+<body>
+	<div id="box" style="width: 40px;height: 40px;position: fixed;left: 20px;bottom: 60px;background: limegreen"></div>
+	<script>
+		box.onmouseover = function(){
+			var that = this;
+			that.animate([
+				{height: that.offsetHeight + "px"},
+				{height: "100px"}
+			],{
+				duration: 1000,
+				fill: "forwards",
+				easing: "ease"
+			});
+		}
+		box.onmouseout = function(){
+			var that = this;
+			that.animate([
+				{height: that.offsetHeight + "px"},
+				{height: "40px"}
+			],{
+				duration: 1000,
+				fill: "forwards",
+				easing: "ease"
+				
+			});
+		}
+
+
+	</script>
+</body>
+</html>
