@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+<!-- data-开头的自定义属性
+    dataset 只要你自定义属性以data-开头，都能操作 -->
+    <div id="box" class="box" data-aaa="box"></div>
+    <script>
+        var box = document.getElementById('box');
+        console.log(box.getAttribute('class'));
+        console.log(box.getAttribute('data-aaa'));
+        box.setAttribute('data-aaa','boxaaa');
+        console.log(box.getAttribute('data-aaa'));
+
+        console.log(box.dataset.aaa);
+        box.dataset.aaa = 'bbb';
+        console.log(box.dataset.aaa);
+        box.dataset.bbb = 'boxbbb';
+        console.log(box.dataset.bbb);
+
+    </script>
+
+</body>
+
+</html>

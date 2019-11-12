@@ -1,0 +1,68 @@
+弹出框颜色的选择：
+// this.$message.success("青色")
+      // this.$message.info('灰色');
+      // this.$message.warning('黄色'); 
+      // this.$message.error('红色');
+
+//防抖
+function(){  
+    ...
+    
+    clearTimeout(timeoutId);
+
+    timeoutId = setTimeout(function () {
+      console.log('content', content);
+      player(content.msgTypeId, comId)
+    }, 500);  
+    ...
+}
+// 节流
+var canRun = true;
+document.getElementById("throttle").onscroll = function(){
+    if(!canRun){
+        // 判断是否已空闲，如果在执行中，则直接return
+        return;
+    }
+
+    canRun = false;
+    setTimeout(function(){
+        console.log("函数节流");
+        canRun = true;
+    }, 300);
+};
+
+// 随机去除N个不重复的数字
+    // function getArrayItems(arr, num) {
+    //     //新建一个数组,将传入的数组复制过来,用于运算,而不要直接操作传入的数组;
+    //     var temp_array = new Array();
+    //     // console.log(temp_array)
+    //     for (var index in arr) {
+    //         temp_array.push(arr[index]);
+    //     }
+    //     //取出的数值项,保存在此数组
+    //     var return_array = new Array();
+    //     // console.log(return_array)
+    //     // console.log(num)
+    //     for (var i = 0; i < num; i++) {
+    //         //判断如果数组还有可以取出的元素,以防下标越界
+    //         if (temp_array.length > 0) {
+    //             //在数组中产生一个随机索引
+    //             var arrIndex = Math.floor(Math.random() * temp_array.length);
+    //             //将此随机索引的对应的数组元素值复制出来
+    //             return_array[i] = temp_array[arrIndex];
+    //             //然后删掉此索引的数组元素,这时候temp_array变为新的数组
+    //             // console.log(arrIndex)
+    //             temp_array.splice(arrIndex, 1);
+    //         } else {
+    //             //数组中数据项取完后,退出循环,比如数组本来只有10项,但要求取出20项.
+    //             break;
+    //         }
+    //     }
+    //     return return_array;
+    // }
+    //测试
+    // num1 = ((getArrayItems(datas,10)))
+
+
+
+

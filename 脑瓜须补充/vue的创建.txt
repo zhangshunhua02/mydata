@@ -1,0 +1,35 @@
+vue的开始：
+    1、node环境
+        去官网下载  
+    2、webpack 
+        ① cnpm/npm i/install webpack -g 
+        ② cnpm/npm i/install webpack-cli -D  
+    3、安装vue
+        1、cnpm/npm i @vue/cli -g 
+        2、本地创建vue项目
+            vue create 项目名
+        3、安装依赖
+            cnpm/npm i/install 
+        4、启动项目
+            npm run serve  
+
+    4、打包压缩
+        npm run build
+
+        安装(axios): npm  i(install) axios  -S
+
+        安装（qs）:npm   i   qs
+
+
+react的创建：
+    	先下载react包
+	创建项目：
+	     create-react-app     项目名称
+	进入文件夹
+	    cd文件夹
+	跑项目
+	npm  staet
+	暴露  npm  run   eject
+	下载(axios) :npm  i  axios  -S
+	下载路由插件: npm  i  react-router-dom   -S
+	安装(redux): npm  i  redux  react-redux   -S

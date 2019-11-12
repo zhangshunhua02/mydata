@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>语义化标签</title>
+    <link rel="stylesheet" href="../../lib/swiper/css/swiper.min.css">
+    <script type="text/javascript" src="../../lib/jquery/jquery-1.12.4.min.js"></script>
+    <script src="../../lib/swiper/js/swiper.min.js"></script>
+
+    <style>
+        header{
+            width: 100%;
+            height: 100px;
+            background: red;
+        }
+        .content{
+            width: 100%;
+            height: 500px;
+            background: pink;
+        }
+        .content .left{
+            width: 20%;
+            height: 100%;
+            background: green;
+            float: left;
+        }
+        .content .right{
+            width: 80%;
+            height: 100%;
+            background: yellow;
+            float: right;
+        }
+        footer{
+            width: 100%;
+            height: 100px;
+            background: purple;
+        }
+        .nav1 a{
+            display: block;
+            width: 25%;
+            float: left;
+            border: 1px solid yellow;
+            box-sizing: border-box;
+
+        }
+        .nav2{
+            margin-top: 50px;
+            width: 100%;
+            height: 100px;
+        }
+        .nav2 ul{
+            padding: 0;
+            list-style: none;
+            width: 200%;
+            height: 100%;
+            background: blue;
+        }
+        .nav2 ul li{
+            width: 20%;
+            height: 100%;
+            background: bisque;
+            float: left;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+        .nav2 ul .swiper-slide{
+            width: 20%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <section class="content">
+            <section class="left">
+                <nav class="nav1">
+                    <a href="##">首页</a>
+                    <a href="##">分类</a>
+                    <a href="##">项目以</a>
+                    <a href="##">项目二</a>
+                </nav>
+                <nav class="nav2 swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="##">首页1</a></li>
+                        <li class="swiper-slide"><a href="##">首页2</a></li>
+                        <li class="swiper-slide"><a href="##">首页3</a></li>
+                        <li class="swiper-slide"><a href="##">首页4</a></li>
+                        <li class="swiper-slide"><a href="##">首页5</a></li>
+                        <li class="swiper-slide"><a href="##">首页1</a></li>
+                        <li class="swiper-slide"><a href="##">首页2</a></li>
+                        <li class="swiper-slide"><a href="##">首页3</a></li>
+                        <li class="swiper-slide"><a href="##">首页4</a></li>
+                        <li class="swiper-slide"><a href="##">首页5</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="right">
+                <aside>
+                    <span>作者：xxx</span><br/>
+                    <span>出版社：xxx</span>
+                </aside>
+                <article>
+                    <p>jfio;aehgi;uhignaieojfkiaghoiaefjjiogjeiogjoi及飞机哥为哦结构ink钢结构</p>
+                </article>
+            </section>
+    </section>
+    <footer></footer>
+    
+    <script>
+          var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 5,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+    
+    
+
+
+</body>
+
+</html>

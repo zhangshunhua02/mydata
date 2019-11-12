@@ -1,0 +1,528 @@
+1、三大系统弹出框；alert():警告提示弹出框     prompt():输入弹出框     confirm():确认取消弹出框
+
+2、变量声明；var  let   const
+
+   (1)那个变量关键字存在声明提升
+  （2）那个变量关键字存在块级作用域，也存在函数作用域
+  （3）那个变量关键字可以重复声明，那个不可以重复声明
+
+
+1.1-7关键字和保留字
+
+  关键字
+  break  do  instanceof  case  else  new  var  finally  return  void  continue  for  switch 
+
+  while  function  this  with
+
+  保留字
+  abstract  enum  int short  boolean  export  interface  staic  byte  extends  long  super  
+
+  char  final  native  sunchronized  class  float  public  package  throws  const  goto 
+
+  private  transient  debugger  inplements  protected  volatile  double  import
+
+2.一元运算符
+
+  (1)只能处理一个操作数的运算符叫做一元运算符
+
+  (2)自增自减：++ --
+
+  (3)++在前，先加后取、++在后，先取后加、--也是一样
+
+3.二元运算符
+
+   处理两个操作数的运算符叫做二元运算符它包括：
+
+   逻辑运算符与或：&& ||
+
+   算术运算符：+ - * / %
+
+   赋值运算符：= += -= *= /= %= <<= >>= &= |=
+
+   位移运算符：<< >> & |
+
+4.1-3三元运算符
+
+  三元运算符又叫条件运算符，会有一个运算结果，条件成立时，运算结果为第一个，条件不成立，运算结果为第二个
+
+5.1-1算术运算符：+ - * / %
+  
+  + 有三个功能，字符串的拼接、数学运算相加以及数学里的正号
+
+  （2）求余：%
+
+      任何数对0求余的结果是NaN
+
+      任何整数对1求余的结果是0
+
+      任何小数对1求余的结果是小数部分
+
+      求余数小于被求余数，余数是求余数本身
+
+      求余数大于被求余数，余数是除不尽剩下的那部分数字    
+ 
+  （3）赋值的运算顺序是从右向左的（赋值运算符的优先级是比较低的）
+
+  （4）比较运算符：> < >= <= == === != !==
+
+       在比较时，如果两边的操作数不是字符串类型的，进行比较时，会隐式的转换为数字，然后再进行比较；如果两边的操作数都是字符串，则比较的是unicode编码值。       
+ 
+   (5) ==：进行值的比较
+
+          1、null除了和undefined以及它本身之外的数据进行比较时，结果都是false
+
+          2、Undefined除了和null以及它本身之外的数据进行比较时，结果都是false
+
+          3、如果两边的操作数是不同等类型的数据时，先使用Number强转函数转换，然后再进行比较；如果两边的操作数是同等类型时，则直接进行值的比较。
+
+          4、NaN和任何数据的比较结果都是false，包括它本身
+
+          5、引用类型之间进行比较时，比较的是地址指针 
+
+       比较运算符的运算结果都是布尔类型的：true || false
+
+  （6）逻辑运算符：逻辑与&& 逻辑或|| 逻辑非!
+
+       一.1.逻辑运算符用于测定变量或值之间的逻辑。
+          2.逻辑与或都是短路操作符，当运算找到结果时，则不会再继续向下运算。
+          3.逻辑与是找假值的，一旦找到假值，则不会再继续向下运算，整个逻辑表达式的运算结果就是对应的那个假值；如果整个逻辑表达式运算到最后，都没有找到假值，则运算结果就是最后一个操作数。
+      
+       二.逻辑或是和逻辑与对应的，找真值。一旦找到真值，则不会再继续向下运算，整个逻辑表达式的运算结果就是对应的那个真值；如果整个逻辑表达式运算到最后，都没有找到真值，则运算结果就是最后一个操作数。
+
+       三.逻辑非是一元运算符：对数据对应的布尔值取反
+
+       四.逻辑与的优先级高与逻辑或
+
+6.运算符的种类
+  
+  赋值运算符  条件运算符  加性运算符  乘性运算符  （）运算符（优先级最高） []运算符  {}运算符
+
+  逗号运算符  分号运算符  反引号运算符  typeOf运算符  instanceof运算符  delete运算符  
+
+  new运算符  in运算符  ...运算符  成员运算符  自增、自减运算符  位移运算符
+
+7.背诵单词
+
+
+
+
+3、标识符的命名规则；
+
+4、全局变量和局部变量
+
+5、6种数据类型  字符串类型(string)  数字类型（number）  （Boolean）布尔类型  （undefined）未定义的   （null）空   （object）对象
+ 
+6、字符串的长度属性的和最大下标的关系
+
+7、字符串的构造函数和怎样得到字符串的实例对象
+
+8、数字类型包括什么
+
+9、什么情况下会出现undefined
+
+10、type of() 检测类型出现的结果
+
+11、各种数据转字符串
+
+12、各种类型转数字
+    （1）转成整形数字  parseInt()
+    （2）转成浮点型数字  parseFloat()
+    （3）使用number强转函数，转换结果为0的有：0，-0，false,"","  ",null,"0",[]
+     (4) 怎样判断是不是整形数字       Number.isInteger() 他不牵涉隐士类型转换
+    
+13、  boolean对应的假值
+      false, NaN,undefined, null,0, -0 ,""
+
+14、判断是不是NaN
+     元素.isNaN()   牵涉隐士类型转换
+     Number.isNaN()  不牵涉隐士类型转换
+
+15、保留小数位     元素.toFixed( n );
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.string:字符串                      2.number 数字类型                  3.Boolean：布尔类型
+
+4.object :对象                       5.function：函数                   6.break:中断当前循环
+
+7.continue:跳出当前循环              8.default:默认值                   9.alert():警告提示弹出框
+
+10.confirm():确认取消弹出框          11.prompt():输入弹出框             12.delete:删除
+
+13：typeOf():检测类型                14.document.write:页面输出         
+
+         
+
+ 
+
+
+
+								《 数 组 》
+
+
+
+
+15.includes:包涵
+
+16.eval:让字符串作为程序去执行       	17.Array.isArray:是不是数组        
+
+18.Array.from:伪数组转数组		19.Array.of:创建数组                 
+
+20.*.push():向数组的尾部添加一个或多个元素，并返回数组新的长度
+
+21.*.pop():向数组的尾部删除一个或多个元素，并返回数组新的长度
+
+22.*.unshift():向数组的头部添加一个或多个元素，并返回数组新的长度 
+
+23.*.shift():  向数组的头部删除一个或多个元素，并返回数组新的长度
+
+24.*.toString():数组转成字符串		25.*.split(分隔符)：字符串转数组
+    
+26.*.indexOf():从指定数组中从前向后查找某个元素首次出现的位置（下标），如果没有出现就是 -1
+
+27.*.lastIndexOf():从前向后查找某个元素最后出现的位置
+
+28.*.reverse():数组的翻转
+           
+29.*.sort():数组的排序，默认是升序，（按照unicode编码值进行排序），会改变原本数组
+
+30.*.concat():合并                      31. *.slice(starIndex,endIndex):截取
+
+32.*.splice():数组的增删改查            33.*.forEach:数组的遍历              34.*.filter():数组的过滤
+
+35.*copyWithin():数组的克隆 
+            
+36.*.reduce（function(先前值，元素值){return 先前值 + 元素值}，初始值）：数组的归并（从左向右） 
+
+37.*.reduceRight（function(先前值，元素值){return 先前值 + 元素值}，初始值）：数组的归并（从右向左）
+
+38.*.map(function(v,i){}):针对的是数组中每个元素                                    
+
+39.*.find():数组中查找值  
+
+40.*.findIndex():数组中查找下标         41.*.fill():数组的替换                      42.*.every():检测数组中每一个元素
+
+43.*.some():检测某些元素                44.return:返回值                            45.arguments:所有实参的集合
+
+
+
+
+
+							《 字 符 串 》
+
+
+
+
+
+
+46.JSON.stringify():对象转json字符串   		47.JSON.parse():json字符串转对象            
+
+48.*.toUpperCase():转大写			49.*.toLowerCase():转小写               
+
+50.*.starsWith():判断字符串以什么开始       	51.*.endWith():判断字符串以什么结尾
+
+52.*.charAt(下标)：根据字符串查找位置   53.substr(下标，数量)：字符串的截取         54.search():字符串的查找
+
+55.*.trim():忽略左右空格                56.*.trimLeft():忽略左空格                  57.*.trimRight():忽略右空格
+
+
+
+
+
+
+							《 日 期 时 间 》
+
+
+
+
+
+
+58.Math.abs():绝对值                      59.Math.max():最大值                        60.Math.min():最小值
+
+61.Math.ceil():向上取整                   62.Math.floor():向下取整                    63.Math.round():四舍五入取整
+
+64.Math.sqrt():开方                       65.Math.pow():次方                                ~~( )向下取整
+
+66.Math.random():随机数
+
+67.Date:日期                              
+
+68.Date.parse():转成时间戳 精确到秒       69.Date.getTime():转成时间戳  精确到毫秒    
+
+70.Date.valueOf():转成时间戳  精确到毫秒  
+
+71.date.getFullYear():获取年                	72.date.setFullYear():设置年
+
+73.date.getMonth():获取月                 	74.date.setMonth():设置月                   
+
+75.date.getDate():获取日期			76.date.setDate():设置日期                
+
+77.date.getMinutes():获取分钟               	78.date.setMinutes():设置分钟
+
+79.date.getSeconds():获取秒               	80.date.setSeconds():设置秒                 
+
+81.date.getMilliSeconds():获取毫秒		82.date.setMilliSeconds():设置毫秒        
+
+83.date.getDay():获取星期                   	星期的取值范围：0-6（ 0 代表星期日）
+
+84.*.getTimeZoneOffSet():格林尼治时间与本地时间相差的分钟数
+
+85.setInterval():定时调用                 86.getInterval():清除间歇调用               
+
+
+
+
+
+							《 DOM 事 件 》
+
+
+	document.getElementById(id名称)：通过id选择器查找元素节点对象
+
+	document.getElementsByTagName(标签名称)： 通过标签名称获取一组元素节点对象
+
+	document.getElementByName(属性名称)：通过name属性名称获取一组元素节点对象
+
+	document.getElementsByClassName(类名)：通过类名获取一组元素节点对象（该方法不支持低版本IE浏览器）
+
+	document.querySelector(各种选择器)：通过各种选择器获取一个元素节点对象
+
+	document.querySelectorall(各种选择器)：通过各种选择器获取一组元素节点对象
+
+87.nodeName:节点名称
+
+88.nodeType:节点类型                      89.nodeValue:节点值                         90.*.getAttribute():获取元素节点对象
+
+91.*.setAttribute():设置元素节点对象      92.*.removeAttribute():删除标签上的属性     
+
+93.*.document.createElement():创建元素节点对象
+
+94.*.document .createTextNode():创建文本节点对象                       95.父节点.appendchild():追加当前父节点的尾部  
+
+96.父节点.append():追加当前父节点的尾部（兼容）                        97.父节点.prepent(子节点)：追加到当前父节点的头部
+
+98.父节点.insertBefore():父节点中插入节点                              99.父节点.after():父节点后追加兄弟节点
+
+100.父节点.before():父节点前追加兄弟节点                               101.父节点.replaceChild():父节点中替换节点
+
+102.当前节点.replaceWith():一个节点替换另一个节点                      103.父节点.removeChild():父节点中指定的删除节点
+
+104.当前节点.remove():删除当前节点                                     105.cloneNode 克隆
+
+106.document.createDocumentFragment():碎片整理 
+
+107.attributes:标签上所有现有属性的集合                                108.childElementCount:父元素下所有子元素的集合
+
+109.childNodes:父元素下所有子节点                                      110.children:父元素下所有子元素
+
+111.classlist:元素，节点，对象上类名的集合                             112.className:当前元素的类名
+
+113.clientWidth,clientHeight:当前元素的宽高（不包含边框，包涵填充）
+
+114.offSetWidth,offSetHeight:当前元素的宽高（包涵边框线，包涵填充）
+
+115.clientLeft,clientTop:当前元素的边框线的宽度                       116.offSetLeft,offSetTop:当前元素的左上偏移量
+
+117.contentEditable:当前元素是否可编辑                                118.draggable:当前元素是否可拖拽
+
+119.firstChild:父元素下的第一个子节点                                 120.firstElementChild:父元素下第一个子元素
+
+121.lastElementChild:父元素下的最后一个子元素                         122.innerHTML:当前元素内所有的内容
+
+123.outHTML:包涵当前元素的所有内容                                    124.innerText:当前元素内的所有文本内容
+
+125.textContent:当前元素内的所有的文本内容                            126.previousSibling:上一个兄弟节点
+
+127.previousElementSibling:上一个兄弟元素节点                         128.nextSibling:下一个兄弟节点（支持IE7及以下的浏览器）
+
+129.nextElementSibling:下一个兄弟元素节点（支持IE7及以下的浏览器）    130,parentElement:父节点和父元素
+
+131.scrollWidth, scrollHeight:当前元素的滚动宽高                      132.scrollLeft, scrollTop:当前元素的滚动左边距和滚动上边距
+
+133.style:当前元素的行内样式对象                                      134.tagName:当前元素的标签名称（大写）
+
+
+
+
+
+
+							《 DOM2 级 事 件 》
+
+
+
+
+
+136.事件绑定：IE:元素.attachEvent("on" + 事件名称，函数fn)    非IE:元素.addEventListener(事件名称，函数fn,事件捕获 true || false)
+
+137.事件删除：IE:detachEvent("on" + 事件名称，函数fn)      非IE:元素.removeEventListener(事件名称，函数fn,事件捕获 true || false)
+
+138.事件对象：IE:window.event                                   非IE:元素.on + 事件名称 = function(){ };
+
+139.防止事件冒泡：IE:事件对象.cancelbubble =  true;             非IE:事件对象.stopPropagation()
+
+140.事件委托：  IE:事件对象.srcElement                          非IE:事件对象.target
+
+150.阻止默认行为：IE:事件对象.returnValue = true(不阻止)        非IE:事件对象.preventDefault()
+
+151.java script:void(0):阻止事件默认行为（不考虑兼容）
+
+
+
+
+							《 鼠 标 事 件 》
+
+
+
+
+
+152.click:单击                           153.dblclick:双击                         154.mousedown:摁下
+
+155.mouseup:弹起                         156.mouseover:滑入                        157.mouseout：滑出
+
+158.mouseenter:进入                      159.mouseleave:离开                       160.mousemove:移动
+
+161.wheel:滚动                           162.mousewheel:鼠标滚动
+
+163.wheelDelta判断滑轮是向上滚动还是向下滚动  如果它大于0，向上滚；否则向下滚
+
+
+
+
+164.keyCode:键值			  type：当前的事件名称  event：事件                      165.键盘事件：keydown,keyup,deypress
+
+166.history:保存的是有关当前网页的浏览器的浏览历史    
+
+167.history.forward():下一级浏览器历史记录               168.history.back():上一级浏览器历史记录
+
+169.history.go():任意一级浏览历史记录                    170.Language:浏览器使用的语言
+
+171.href:当前文档的路径地址                              172.navigator:对象包涵浏览器的信息
+
+173.window.print():打印机                                174.setTimeout():延时调用
+
+175.load:预加载                        176.focus:获取焦点                       177.blur:失去焦点 
+
+178.submit:提交表单                    179.reset:表单重置                       180.resize:浏览器窗口大小发生改变
+
+181.scroll:滚动事件                    183.change:改变                          183.value:值
+
+184.获取行内样式最终值：IE：元素节点对象.currentStyle               非IE:window.getComputedStyle();
+
+185.decodeURL():翻译编码（%E8%8B%） 
+                          
+186.parseInt(要进制的数 10，进制数 10).toString(变成进制的数 2) ：十进制数转变成二进制
+
+187.Number.isFinite():判断是不是真实存在的数字                 
+
+188.Number.isInteger():判断是不是整形数字
+
+189.元素.charCodeAt(下标):转unicode编码值   
+                   
+190.property:属性              string.fromCharCode(unicode编码值)：unicode编码值转字符串
+
+
+
+							《 表 格 》
+
+135.caption:表头
+
+191.表格名称.deleteCaption():删除表名                          192.表格名称.deleteTHead():删除表头   
+   
+192.父元素.delete.Row(下标)：删除行				
+
+193.表格名称.deleteTFoot():删除表尾                            194.argument.callee():调用外层函数 
+      
+194.父元素.delete.Cell(下标)：删除列
+
+195.preTimeStr:上一个时间字符串                                196.timeStr:当前的时间字符串
+
+197.constructor:检测数组                                       198.instanceOf:检测一个实例对象是否属于一个函数对象
+
+199.元素.charAt(下标)：根据位置查找字符                       
+
+206.获取样式最终值： IE:元素节点对象.currentStyle();                   非IE:window.getComputedStyle()
+
+207.innerWidth、innerHeight:可视宽、高                             element:元素              attribute:标签的属性   
+
+208.Object.prototype.toString.call(数据类型)：检测这是什么数据类型
+
+209.in：判断属性是否属于一个对象
+
+210.property：对象的属性  prototype：构造函数的隐式原型对象   __proto__：实例对象的显式原型对象 
+    constructor：指向的是对象对应的构造函数   
+
+211.constant：常量
+
+212.variable：可变的
+
+213.arguments：函数的隐藏对象，所有实参的集合
+
+214.arguments.callee：指向当前的函数（递归时使用，注意严格模式下，不能使用该写法）
+
+215.构造函数.name：当前构造函数的名称
+
+216.构造函数.方法：当前构造函数的静态方法
+
+217.构造函数.prototype.方法：当前构造函数的原型方法
+
+218.this：函数内部的隐藏对象，关于概念，查看笔记
+
+219.call、apply、bind：改变this指向
+
+220.new：实例化函数的关键字，得到实例对象
+
+
+
+
+							《正则》
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+
+
+
+
+
+
+   

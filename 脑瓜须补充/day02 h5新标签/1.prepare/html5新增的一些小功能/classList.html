@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box1 box2 box3"></div>
+    <script>
+        var box = document.querySelector('.box1');
+        console.log(box.classList);
+        console.log(typeof(box.classList));
+        box.classList.add('box2');
+        console.log(box.classList)
+        box.classList.add('box4');
+        console.log(box.classList);
+        box.classList.remove('box2');
+        console.log(box.classList);
+        box.classList.toggle('box5');
+        console.log(box.classList);
+        box.classList.toggle('box3');
+        console.log(box.classList);
+        
+    </script>
+</body>
+
+</html>

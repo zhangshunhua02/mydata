@@ -1,0 +1,177 @@
+## 1.简介
+    HTML超文本标记语言，是w3c制定的网页标签的标准，后来随着版本的不断的更新迭代，出现了XHTML、HTML4、HTML5。
+    HTML5定义了HTML标准的最新版本。
+    对该名词有两种理解：
+    第一种：它是一个新版本的HTML语言，具有新的元素，属性和行为
+    第二种：它有更强大的技术集，允许更多样化和强大的网站和应用，这个集合有时称为HTML5和朋友，通常缩写为HTML5。
+##  2.优势
+    跨平台   唯一一个通吃PC IPhone Android 等主流平台的跨平台语言
+    更新迭代块
+    降成本
+    导流入口多   
+## 3.新增的标签
+   3.1 语义化标签（实际上都是div）
+        <header></header>
+        作为网页或者section的头部，每一个部分的头部都可以使用header标签，一个网页中不限制header标签的数量。
+
+        <section></section>
+        文档中的节或者段或者内容区，section通常会自带标题，最好不要用，手动给他们降级。
+
+        <nav></nav>
+        代表页面的导航链接区域，用于定义页面的主要导航部分
+        nav的使用情况有两种
+        第一种
+         nav里面存放a 元素
+         如果导航区是不动的静止的，nav区直接写a
+        第二种
+         nav里面存放ul li a 元素
+         如果导航区是动的，nav里面加ul li a 元素
+        注：用于整个页面主要导航上面
+
+        <aside></aside>
+        包含在article中作为主要内容的附属信息，其中的内容可以是当前文章有关的相关资料，标签，名词解释等（特殊的section）
+        注：
+         1.aside在article内表示主要内容的附属信息
+         2.在article之外则可做侧边栏，没有article与之对应，最好不用
+
+        <article></article>
+         article代表一个在文档，页面或者网站中自成一体的内容，其目的是为了让开发者独立开发或者重用。如论坛的帖子、博客上的文章，一篇用户的评论，一个互动的widget小工具
+
+         aside和article是配套使用的
+
+        <footer></footer>
+        代表网页或者section的底部，没有个数限制，除了包裹内容不一样，其他跟header类似
+              
+   3.2 其他标签
+        状态标签
+        meter:用来显示已知范围的标量值或者分数值。
+	    value:当前的数值。
+	    min:值域的最小边界值。如果设置了，它必须比最大值要小。如果没设置，默认为0
+	    max:值域的上限边界值。如果设置了，它必须比最小值要大。如果没设置，默认为1
+	    low:定义了低值区间的上限值,如果设置了，它必须比最小值属性大，并且不能超过high值和最大值。未设置或者比最小值还要小时，其值即为最小值。
+	    high:定义了高值区间的下限值。如果设置了，它必须小于最大值，同时必须大于low值和最小值。如果没有设置，或者比最大值还大，其值即为最大值。
+	    optimum:这个属性用来指示最优/最佳取值。
+
+       progress:用来显示一项任务的完成进度
+	    max:该属性描述了这个progress元素所表示的任务一共需要完成多少工作.
+	    value：该属性用来指定该进度条已完成的工作量.
+	    如果没有value属性,则该进度条的进度为"不确定",
+	    也就是说,进度条不会显示任何进度,你无法估计当 前的工作会在何时完成
+
+        列表标签
+        datalist:datalist会包含一组option元素，这些元素表示其表单控件的可选值
+	    它的id必须要和input中的list一致
+	    details: 一个ui小部件，用户可以从其中检索附加信息。
+	    open属性来控制附加信息的显示与隐藏
+	    summary:用作 一个<details>元素的一个内容摘要（标题）
+	
+        注释标签
+        ruby
+        rt: 展示文字注音或字符注释。
+
+        标记标签
+        mark:着重    
+
+   3.3 新增表单和属性 
+       3.3.1文本输入
+        email:电子邮箱输入框（可以校正邮箱格式，若是不符合，则不会提交）
+          <input type="email" name="email">
+        tel:电话号码输入框（但是输入字母也可以提交，不会校正）
+        url:网页URL输入框
+        search搜索输入框（自动填充默认打开）
+        number 数字选择
+        number -min、max、step 最小，最大取值，间隔取值
+
+       3.3.2 数据选择
+        range 特定范围内的数值选择器
+           range - min、max、step  最小，最大取值，间隔取值
+        color 颜色选择
+           datetime-local 日期+时间选择
+        time 时间选择
+        date  日期选择
+        week 周选择
+        Month 月选择
+          注：文本输入和数据选择中的类型，都是input标签中type属性的种类
+      3.3.3 h5新的属性
+      参考：http://www.w3school.com.cn/html5/html_5_form_attributes.asp
+        placeholder 输入框的提示信息
+        <input type=”text” placeholder =”我是XX”>
+        <input type=”submit” value=”提交”>
+           注：有两个文本区域，一个是placeholder中的文本区域,另一个是text中的文本区域
+        placeholder设置单独样式
+        input[type=’text’]::-webkit-input-placeholder{
+            color:yellowgreen;
+        }
+        设置text文本框中文本样式
+        input[type=’text’]{
+           color:green;
+         }
+
+        autocomplete 是否保存用户输入值
+         autocomplete默认是打开 on
+         autocomplete关闭off（在银行等机密性比较高的）
+
+        autofocus=’autofocus’可以直接写一个autofocus,自动获取焦点
+
+        form属性规定输入域所属的一个或多个表单
+
+
+
+        required验证类，不能为空格
+        
+   3.4 web存储 localStorage、sessionStorage、cookie
+   3.5 音视频标签 video、audio
+   3.6 画布canvas，图表插件...
+   3.7 地理位置 navigator.Geolocation
+   3.8 websocket
+   ##注：HTML5标签不支持IE8及以下浏览器（实际IE9对有些标签支持也不太好），若是考虑兼容问题时，引入html5shiv.js文件解决该问题。
+   原理：无论高版本还是低版本的浏览器都支持document.createElement(),html5shiv.js中就是利用此方法，来创建元素的。
+##  4.HTML5拓展的标签的功能
+    4.1 class
+     在JS中获取一个标签中多个class类名,class列表classList
+     设置class类，box.className = ‘box’，会将div标签中的class属性中的所有类名覆盖掉，class=”box”，只能做拼串操作。
+     在HTML5中可以
+     add( String )添加指定的类值。如果这些类已经存在于元素的属性中，那么它们将被忽略。
+      eg：box.classList.add(‘box5’)
+     remove( String )删除指定的类值。
+      eg:box.classList.remove(‘box4’)
+     toggle ( String )
+     切换 class value; 即如果类存在，则删除它并返回false，如果不存在，则添加它并返回true，如果存在就会自动删除，如果没有存在就自动给我们加上来
+    4.2 自定义属性
+     操作属性的两种方式：读取属性值、设置新的属性值（写入或者赋值）
+     属性大体分为两类：对象上的属性、标签上的属性（细究可以理解为特性，例如Id class style）
+
+       属性	        读取      	            写入（赋值）
+     对象上的	obj.name/obj[‘name’]      obj.name = ‘tom2’
+	 标签上的	box.getAttribute()	    box.setAttribute(‘name’,’value’)
+
+
+   对象的属性
+    动态给对象添加属性
+       注：指的是对象上的属性跟标签上的属性无关
+    原本对象上无此属性，强硬给对象添加属性，即动态添加属性
+    eg:
+      obj.age = 18;
+      box.sex = ‘男’
+
+   自定义属性（本身没有，强硬添加），属于标签上的属性
+   以data-开头，自定义属性，对页面布局无意义无影响
+   eg：
+    box.getAttribute()
+    box.setAttribute()
+   在HTML中使用dataset操作以data-开头的自定义属性
+    读取
+   box.dataset.aaa
+   若是后面有两个-，则使用驼峰命名法
+   eg：
+    box.dataset.aaaBbb
+   赋值
+   box.dataset.aaa = ‘22’
+   box.dataset.aaaBbb = ‘red’
+   注：大部分的属性即使标签的属性又是对象的属性
+   可借助浏览器查看elements  properties里面查看属性，打开的都是对象上的属性
+   标签上的属性在attributes中
+  4.3内容可编辑性
+
+   标签上的属性
+    contenteditable = “true”   

@@ -1,0 +1,12 @@
+body,div,ul,ol,dt,dd,dl,li,h1,h2,h3,h4,h5,h6,form,input,select,textarea,p,img,a,span,strong,*{ padding:0; margin:0;}
+body{ font-size:16px; font-family:"ËÎÌו"; color:#000000; background-color:#FFFFFF;}
+ul,ol,li{ list-style:none;}
+//h1,h2,h3,h4,h5,h6{ font-size:18px;}
+img,input,select,textarea{ vertical-align:middle}
+img{ border:none;}
+a{ color:#333333; text-decoration:none;}
+a:hover{ color:#003366;}
+.clear{ clear:both; height:0; width:0; overflow:hidden;}
+
+
+

@@ -1,0 +1,90 @@
+1.创建仓库
+2.远程仓库克隆到本地；
+3.在编辑器中打开仓库，（添加忽略文件创建.gitignore配置文件）
+4.正常增加编写文件
+	git add *  提交工作区的文件到暂存区（不包括忽略文件）
+	git commit -m" 提交暂存区的文件到版本区（提交什么要写清楚）
+	git push -u origin master 正常将本地提交推送到远程仓库（首次）
+	git push origin master 第二次开始
+二.第二种方法
+  1.创建仓库和远程仓库；
+  2.在本地初始化git仓库
+  3.关联本地和远程仓库；git remote add origin http:网址
+	git remote  remove origin 移除
+	git remote -v 查看
+  4.git pull origin master 拉取本地仓库，和远程仓库保持一致
+  5.在编辑器种打开仓库，添加忽略文件创建.gitignore配置文件（将不想要Git管理，就将其添加到。gitignore配置文件中）
+  6.正常增加编写文件
+	git add *  提交工作区的文件到暂存区（不包括忽略文件）
+	git commit -m" 提交暂存区的文件到版本区（提交什么要写清楚）
+	git push -u origin master 正常将本地提交推送到远程仓库（首次）
+	git push origin master 第二次开始
+
+拉取
+git pull origin master将远程仓库的master分支上代码版本复制合并到班底master分支上
+git fetch origin master:dev创建了一个dev分支，将远程仓库的master分支上代码版本复制到dev分支上
+git diff master dev对比两分支内容，观察会不会产生冲突；
+
+
+
+差异对比
+git diff 比较暂存区和工作区
+git diff --cashed 比较版本区与暂存区
+git diff master 比较版本区与工作区
+
+
+
+日志
+git log 显示从最近到最远的所有提交日志记录	
+
+
+
+
+sessionStorage
+sessionStorage.setItem(name,xh)增
+
+
+
+
+定位
+getcurrentPosition()当前位置
+watchPosition()动态监听当前位置
+clearWatch()清除位置
+navigator.geolocation.getCurrentPosition(function(){},function(){},{})
+参数1.成功的回调
+参数2.失败的回调
+参数3.配置
+
+
+
+
+
+
+git config --global user.name
+git config user.name
+mkdir xxx 新建文件
+cd xx
+cd ..返回上一级
+clear清除
+
+
+
+
+
+
+创建本地文件和远程仓库
+初始化本地文件
+
+
+
+
+
+
+
+
+
+
+
+
+
+

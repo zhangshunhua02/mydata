@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <style>
+        input[type='text']::-webkit-input-placeholder{
+            color: red;
+        }
+        input[type='text']{
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+     <!-- <form action="http://localhost:3000/test" method="GET">
+         <input type="text" placeholder="我是XX">
+         <input type="submit" value="提交">
+     </form> -->
+     <form action="http://localhost:3000/test" method="GET" autocomplete="on">
+        <input type="text"><br>
+        <input type="text" autofocus="autofocus"><br>
+        <input type="email" autocomplete="off"><br>
+        <input type="submit" value="提交">
+    </form>
+
+</body>
+
+</html>
