@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全选不选反选</title>
+</head>
+<body>
+<div id="box">
+	<button id="btn1">全选</button>
+	<button id="btn2">不选</button>
+	<button id="btn3">反选</button>
+	<hr>
+	<input type="checkbox" name="" id="" checked="true">吃饭
+	<input type="checkbox" name="" id="">睡觉
+	<input type="checkbox" name="" id="">打豆豆
+	<input type="checkbox" name="" id="">敲代码
+	<input type="checkbox" name="" id="">抽烟
+	<input type="checkbox" name="" id="">喝酒
+	<input type="checkbox" name="" id="">打麻将
+	<input type="checkbox" name="" id="">烫头
+	<input type="checkbox" name="" id="">抠脚丫子
+	<input type="checkbox" name="" id="">嗑瓜子
+</div>
+	<script>
+		var ipts = document.querySelectorAll("input[type=checkbox]");
+		btn1.onclick = function(){
+			// for(var i=0;i<ipts.length;i++){
+			// 	ipts[i].checked = true;
+			// }
+
+			// ipts.forEach(function(ipt){
+			// 	ipt.checked = true;
+			// });
+			
+			// Array.from(ipts).forEach(function(ipt){
+			// 	ipt.checked = true;
+			// });
+
+			// [].forEach.apply(ipts,[function(ipt){
+			// 	ipt.checked = true;
+			// }]);
+			
+			[].forEach.call(ipts,function(ipt){
+				ipt.checked = true;
+			});
+		}
+		btn2.onclick = function(){
+			[].forEach.call(ipts,function(ipt){
+				ipt.checked = false;
+			});
+		}
+		btn3.onclick = function(){
+			[].forEach.call(ipts,function(ipt){
+				ipt.checked = !ipt.checked;
+
+				// if(ipt.checked){
+				// 	ipt.checked = false;
+				// }else{
+				// 	ipt.checked = true;
+				// }
+				
+				// ipt.checked = ipt.checked ? false :true;
+			});
+		}
+		
+		box.onclick = function(evt){
+			var e = evt || window.event;
+			var target = e.target || e.srcElement;
+			Array.from(ipts).forEach(function(ipt){
+				switch(true){
+					case target.id =="btn1":
+						ipt.checked = true;
+					break;
+					case target.id =="btn2":
+						ipt.checked = false;
+					break;
+					case target.id =="btn3":
+						ipt.checked = !ipt.checked;
+					break;
+				}
+			});
+		}
+		
+		Object.defineProperty(Array.prototype,"fe",{
+			value: function fe(){
+				let f = arguments[0];
+				for(let i=0;i<this.length;i++){
+					f(this[i],i,this);
+				}
+			},
+			configurable: true,
+			enumerable: false,
+			writable: true
+		});
+		NodeList.prototype.fe = Array.prototype.fe;
+		var sum = 0;
+		[1,2,3,4,5].fe(function(v,i,arr){
+			sum += v;
+		});
+
+	</script>
+</body>
+</html>

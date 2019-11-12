@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#box{
+	/*width: 516px;*/
+	/*height: 50px;*/
+	margin: 50px auto;
+}
+#box button,#pages{
+	float: left;
+}
+#box button{
+	padding: 5px 10px;
+	margin: 8.5px 5px;
+}
+#pages{
+	display: inline-block;
+	/*width: 250px;*/
+	/*height: 50px;*/
+	overflow:hidden;
+	position: relative;
+}
+#pages ul{
+	list-style: none;
+	position: absolute;
+	left: 0;
+}
+#pages ul li{
+	float: left;
+	text-align: center;
+	border: 1px solid #ccc;
+	box-sizing: border-box; /*让当前的边框线称为宽高的一部分 */
+	cursor: pointer;
+	border-radius: 4px;
+}
+#pages ul li.active{
+	background: #ddd;
+}

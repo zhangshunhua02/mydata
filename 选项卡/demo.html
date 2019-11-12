@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选项卡</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style: none;
+		}
+		#box{
+			width: 480px;
+			height: 132px;
+			margin: 50px auto;
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+		
+		#tits{
+			width: 100%;
+		}
+		#tits ul{
+			list-style: none;
+			width: 100%;
+			height: 26px;
+			/*border-bottom: 1px solid #ccc;*/
+		}
+		#tits ul li:not(.active){
+			width: 80px;
+			height: 26px;
+			text-align: center;
+			line-height: 28px;
+			border-bottom: 1px solid #ccc;
+			box-sizing: border-box;
+			float: left;
+			cursor: pointer;
+		}
+		
+		#tits ul li.active{
+			width: 80px;
+			float: left;
+			cursor: pointer;
+			text-align: center;
+			border-top: 2px solid skyblue;
+			border-left: 1px solid #ccc;
+			box-sizing: border-box;
+			line-height: 24px;
+			border-right: 1px solid #ccc;
+		}
+	
+		#content{
+			font-size: 14px;
+		}
+		#l,#des{
+			float: left;
+		}
+		.tab{
+			width: 100%;
+			height: ;
+			margin: 10px 0px;
+			display: none;
+		}
+		.tab:first-child{
+			display: block;
+		}
+
+		#l,#des{
+			float: left;
+		}
+		#l{
+			width: 255px;
+		}
+		#des{
+			width: 215px;
+			padding: 0px 5px;
+		}
+		#des ul{
+
+		}
+		#des ul li{
+			float: left;
+			width: 105px;
+			height: 20px;
+		}
+		#des ul li:nth-child(even){
+			margin-left: 5px;
+		}
+		#des ul li i{
+			font-style: normal;
+			margin-right: 4px;
+		}
+		#des ul li a{
+			color: #222;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="box">
+		<div id="tits">
+			<ul>
+				<li class="active">家用电器</li>
+				<li>手机通讯</li>
+				<li>电脑数码</li>
+				<li>食品百货</li>
+				<li>居家生活</li>
+				<li>服饰鞋包</li>
+			</ul>
+		</div>
+		<div id="content">
+			<div class="tab">
+				<div id="l">
+					<img src="imgs/1.jpg" alt="">
+				</div>
+				<div id="des">
+					<p>【11.11京东全球好物节】确认过眼神,是你想要的折扣!更多大牌都在打折,抓紧囤货!</p>
+					<ul>
+						<li><i>▪</i><a href="javascript:void(0)">风格时尚</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">悦活运动</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">型格男装</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">礼品箱包</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="tab">
+				<div id="l"><img src="imgs/2.jpg" alt=""></div>
+				<div id="des">
+					<p>【11.11京东全球好物节】确认过眼神,是你想要的折扣!更多大牌都在打折,抓紧囤货!</p>
+					<ul>
+						<li><i>▪</i><a href="javascript:void(0)">风格时尚</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">悦活运动</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">型格男装</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">礼品箱包</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="tab">
+				<div id="l"><img src="imgs/3.jpg" alt=""></div>
+				<div id="des">
+					<p>【11.11京东全球好物节】确认过眼神,是你想要的折扣!更多大牌都在打折,抓紧囤货!</p>
+					<ul>
+						<li><i>▪</i><a href="javascript:void(0)">风格时尚</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">悦活运动</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">型格男装</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">礼品箱包</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="tab">
+				<div id="l"><img src="imgs/4.jpg" alt=""></div>
+				<div id="des">
+					<p>【11.11京东全球好物节】确认过眼神,是你想要的折扣!更多大牌都在打折,抓紧囤货!</p>
+					<ul>
+						<li><i>▪</i><a href="javascript:void(0)">风格时尚</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">悦活运动</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">型格男装</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">礼品箱包</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="tab">
+				<div id="l"><img src="imgs/5.jpg" alt=""></div>
+				<div id="des">
+					<p>【11.11京东全球好物节】确认过眼神,是你想要的折扣!更多大牌都在打折,抓紧囤货!</p>
+					<ul>
+						<li><i>▪</i><a href="javascript:void(0)">风格时尚</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">悦活运动</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">型格男装</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">礼品箱包</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="tab">
+				<div id="l"><img src="imgs/6.jpg" alt=""></div>
+				<div id="des">
+					<p>【11.11京东全球好物节】确认过眼神,是你想要的折扣!更多大牌都在打折,抓紧囤货!</p>
+					<ul>
+						<li><i>▪</i><a href="javascript:void(0)">风格时尚</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">悦活运动</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">型格男装</a></li>
+						<li><i>▪</i><a href="javascript:void(0)">礼品箱包</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var lis = tits.querySelectorAll("li");
+		var tabs = content.querySelectorAll(".tab");
+		for(var i=0;i<lis.length;i++){
+			// lis[i].onclick = (function(index){
+			// 	return function(){
+			// 		console.log(index);
+			// 	}
+			// })(i)
+			
+			// (function(index){
+			// 	lis[index].onclick = function(){
+			// 		console.log(index);
+			// 	}
+			// })(i)
+			
+			// 给每一个li元素节点对象添加自定义下标属性
+			// lis[i].index = i; 
+			// lis[i].onclick = function(){
+			// 	console.log(this.index);
+			// }
+			
+			// 给每一个li标签元素添加自定义下标属性
+			lis[i].setAttribute("index",i);
+			lis[i].onclick = function(){
+				currentIndex = this.getAttribute("index"); // 得到点击的下标
+				change(currentIndex); // 调用函数，下标传进去
+			}
+		}
+		var currentIndex = 0;
+		var id = setInterval(function(){
+			++currentIndex > lis.length - 1 ? (currentIndex = 0) : currentIndex;
+			change(currentIndex);
+		},1000);
+		box.onmouseover = function(){
+			clearInterval(id);
+		}
+		box.onmouseout = function(){
+			id = setInterval(function(){
+				++currentIndex > lis.length - 1 ? (currentIndex = 0) : currentIndex;
+				change(currentIndex);
+			},1000);
+		}
+		function change(index){
+			for(var j=0;j<lis.length;j++){
+				lis[j].className = j == index ? "active" : "";
+				tabs[j].style.display = j == index ? "block" : "none";
+			}
+		}
+
+	</script>
+</body>
